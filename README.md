@@ -116,6 +116,14 @@
  - 입력값이 정형화 되어있는 경우에는 switch/case 문장을 사용하는것이 편리하다. 
  
  ### 3. 백준문제 풀이
+ - if 문 백준 5문제
  
+ ![백준_if문](https://user-images.githubusercontent.com/42793489/148174171-5dd8016e-bf28-4cda-a71d-c2da6c8118f7.PNG)
+
+ 
+ - while 문 백준 3문제
+ 
+ ![백준_while문](https://user-images.githubusercontent.com/42793489/148174178-8cbb3950-6702-42c3-bbcb-43e578a23643.PNG)
+
 </div>
 </details>

@@ -140,5 +140,9 @@
  - 세미콜론(;)으로 구분을 한다. 
  - while문과 동일하게 continue를 사용해서 for 문 처음으로 돌아가서 사용이 가능하다. 
  
-</div>
+  ### 2. 백준 for문 문제풀이
+ 
+ ![백준_for문](https://user-images.githubusercontent.com/42793489/148317500-8c39860d-2a55-4042-85b5-ea51ab1856c5.PNG)
+
+ </div>
 </details>

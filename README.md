@@ -106,12 +106,8 @@
  - else if 를 사용하여 다중조건 판단을 가능하게 한다. 
  - if 와 else if 조건을 충족 못하는 조건들은 else 문장으로 수행된다.
  
- ##### <h4> 2-2 while문
- - 조건이 참인 동안 while문 아래의 문장을 반복하여 수행한다. 
- - while문 강제로 멈춰야 하는경우 break 호출하여 while 문 빠져 나가게 한다.
- - while 문 조건문으로 돌아가기 위해 continue 를 호출하여 다시 while문으로 돌아간다.
  
- ##### <h4> 2-3 switch/case문
+ ##### <h4> 2-2 switch/case문
  - 입력변수의 값과 일치하는 case 입력값에 따라 해당 case 문에 속한 문장이 실행된다. case 문장안에 break 문장을 통해 case 문장 실행 뒤 switch 문을 빠져 나간다.
  - 입력값이 정형화 되어있는 경우에는 switch/case 문장을 사용하는것이 편리하다. 
  
@@ -130,9 +126,19 @@
  
  
 <details>
-<summary> 2022.1.5(Wen)</summary>
-<div markdown="1">    
+<summary> 2022.1.6(Tur)</summary>
+<div markdown="1">  
  
+ ## 📝연산자/조건문/반복문2 + 백준문제 풀이 
+ ### 1. 반복문
+ ##### <h4> 1-1 while 문
+ - 조건이 참인 동안 while문 아래의 문장을 반복하여 수행한다. 
+ - while문 강제로 멈춰야 하는경우 break 호출하여 while 문 빠져 나가게 한다.
+ - while 문 조건문으로 돌아가기 위해 continue 를 호출하여 다시 while문으로 돌아간다.
+ 
+ ##### <h4> 1-2 for 문
+ - 세미콜론(;)으로 구분을 한다. 
+ - while문과 동일하게 continue를 사용해서 for 문 처음으로 돌아가서 사용이 가능하다. 
  
 </div>
 </details>

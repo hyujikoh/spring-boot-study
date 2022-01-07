@@ -163,7 +163,11 @@
  - 하나의 클래스에 여러개의 객체들이 생성될수 있다. 각 객체들은 동일한 속성을 가지고 있지만, 자신만의 고유한 값을 가짐으로 구분된다. 
  
  ### 3. 실습
- - 백준문제 1712번 손익분기점 계산 문제 class 를 이용해서 풀이
+ 
+ <details>
+
+<summary> 백준문제 1712번 손익분기점 계산 문제 class 를 이용해서 풀이</summary>
+<div markdown="2">
  
  - 소스코드
  
@@ -172,6 +176,26 @@
  - 문제풀이 결과 
  
  ![백준_손익분기점_클래스사용](https://user-images.githubusercontent.com/42793489/148510001-6c265268-b73e-44ee-b1d1-a96346804a60.PNG)
+ </div>
+</details>
+ 
+ <details>
+
+<summary> 백준문제 2292번 벌집 문제 class 를 이용해서 풀이</summary>
+<div markdown="2">
+ 
+ - 소스코드
+ 
+![백준_벌집_code](https://user-images.githubusercontent.com/42793489/148516881-8c9ee82a-d531-47c7-8a88-56766f85672b.PNG)
+
+
+ - 문제풀이 결과 
+ 
+ ![백준_벌집](https://user-images.githubusercontent.com/42793489/148516904-5ace6ae7-b6e2-4b3c-b5f2-a2c7682bc602.PNG)
+
+
+ </div>
+</details>
 
  </div>
 </details>

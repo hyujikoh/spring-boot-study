@@ -20,7 +20,7 @@
 - 프로그램 실행시 모든 객체 생성하지 않고, 객체가 필요한 시점에 동적로딩해서 객체 생성한다.
 유지보수 할 시 해당 클래스만 수정하면 되므로 유지보수에 용이하다.
 
- 
+### 6. https://softsquared.notion.site/Spring-Boot-2c133315be4e4e78a5bdf8514cb28bcd
 </div>
 </details>
 
@@ -165,4 +165,3 @@
  ### 3. 실습
  </div>
 </details>
-https://softsquared.notion.site/Spring-Boot-2c133315be4e4e78a5bdf8514cb28bcd

@@ -199,3 +199,27 @@
 
  </div>
 </details>
+ 
+ 
+  
+<details>
+
+<summary> 2022.1.8(Sat) </summary>
+<div markdown="1">
+ 
+ ## 📝 상속 / 캡슐화 / 다형성
+ 
+ ### 1. 상속
+ - 자식 클래스가 부모 클래스의 기능을 그대로 물려 받을 수 있는 것이 상속이다.
+ - 부모 클래스의 private 접근 제한을 갖는 필드 및 메소드는 자식이 물려받을수 없다.
+ - t
+ ``` JAVA
+ public Class parent {};
+ public Class Child extends parent {}:
+ ```
+ 
+ ### 2. 캡슐화
+ 
+ ### 3. 다형성 
+ </div>
+</details>

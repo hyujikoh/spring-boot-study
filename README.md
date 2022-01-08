@@ -212,10 +212,17 @@
  ### 1. 상속
  - 자식 클래스가 부모 클래스의 기능을 그대로 물려 받을 수 있는 것이 상속이다.
  - 부모 클래스의 private 접근 제한을 갖는 필드 및 메소드는 자식이 물려받을수 없다.
- - t
+ - 상속 받고자 하는 자식 클래스 옆에 extends 키워드를 붙이고, 상속할 부모 클래스를 작성한다.
  ``` JAVA
  public Class parent {};
  public Class Child extends parent {}:
+ ```
+ 
+ - 상속할 부모는 오직 1명 뿐이다. 다음은 동작하지 않는 코드이다.
+ ``` JAVA
+ public Class parent {};
+ public Class parent2 {};
+ public Class Child extends parent, parent2 {}:
  ```
  
  ### 2. 캡슐화

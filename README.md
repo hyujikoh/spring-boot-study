@@ -214,15 +214,15 @@
  - 부모 클래스의 private 접근 제한을 갖는 필드 및 메소드는 자식이 물려받을수 없다.
  - 상속 받고자 하는 자식 클래스 옆에 extends 키워드를 붙이고, 상속할 부모 클래스를 작성한다.
  ``` JAVA
- public Class parent {};
- public Class Child extends parent {}:
+ public class parent {};
+ public class Child extends parent {}:
  ```
  
  - 상속할 부모는 오직 1명 뿐이다. 다음은 동작하지 않는 코드이다.
  ``` JAVA
- public Class parent {};
- public Class parent2 {};
- public Class Child extends parent, parent2 {}:
+ public class parent {};
+ public class parent2 {};
+ public class Child extends parent, parent2 {}:
  ```
  
  ### 2. 캡슐화
@@ -231,20 +231,20 @@
  - 외부에서 특정 객체의 데이터 및 함수를 직접 접근을 막음으로써 변경을 못하게 하고 시스템 확장시 오류를 최소화 할 수 있다는 점에서 은닉화는 장점이 된다. 
  - 캡슐화를 위한 접근 제어자
   ``` JAVA
- public Class parent1 {
+ public class parent1 {
      private int val1; // 동일한 클래스안에서만 접근이 가능하고, 외부에서는 접근이 불가능하다.
  }; // 다른패키지에서 인스턴스(객체) 생성가능하다.
- private Class parent2 {}; //동일한 클래스안에서만 접근이 가능하고,  상속은 안된다.
- protected Class parent3 {}; //동일한 패키지 안에서 사용가능하고, 다른 외부 패키지라도 상속받은 클래스에는 접근 가능 
+ private class parent2 {}; //동일한 클래스안에서만 접근이 가능하고,  상속은 안된다.
+ protected class parent3 {}; //동일한 패키지 안에서 사용가능하고, 다른 외부 패키지라도 상속받은 클래스에는 접근 가능 
  ```
  ### 3. 다형성 
  - 하나의 객체가 여러 타입을 가질수있는 특징을 다형성이라고한다.
  - JAVA 에서 다형성은 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 참조할 수 있도록 구현되고 있다.
  
  ``` JAVA
- public Class child {};
- public Class parent {};
- public Class child extends parent implements parents1, parents2 {}: // child 객체는 parents 클래스의 객체이면서, parents1, parents2 인터페이스의 객체이기도 하다. 
+ public class child {};
+ public class parent {};
+ public class child extends parent implements parents1, parents2 {}: // child 객체는 parents 클래스의 객체이면서, parents1, parents2 인터페이스의 객체이기도 하다. 
  ```
  </div>
 </details>

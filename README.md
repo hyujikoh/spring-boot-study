@@ -238,5 +238,13 @@
  protected Class parent3 {}; //동일한 패키지 안에서 사용가능하고, 다른 외부 패키지라도 상속받은 클래스에는 접근 가능 
  ```
  ### 3. 다형성 
+ - 하나의 객체가 여러 타입을 가질수있는 특징을 다형성이라고한다.
+ - JAVA 에서 다형성은 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 참조할 수 있도록 구현되고 있다.
+ 
+ ``` JAVA
+ public Class child {};
+ public Class parent {};
+ public Class child extends parent implements parents1, parents2 {}: // child 객체는 parents 클래스의 객체이면서, parents1, parents2 인터페이스의 객체이기도 하다. 
+ ```
  </div>
 </details>

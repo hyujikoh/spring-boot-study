@@ -9,20 +9,22 @@ class cal{
 	public void result(){
 		for(int i=0; i<this.num;i++) {
 			int k = sc1.nextInt();
-            boolean is = true;
 			if(k==1) {
 				continue;
 			}
-			for(int j=2;j<=Math.sqrt(k);j++) {
-				if(k%j==0) {
-					is = false; 
+			for(int j=2;j<=k;j++) {
+				
+				if(k%j==0&&j!=k) {
+					break;
 				}
+				else if(j==k){
+					cnt++;
+				}
+				
 			}
-            if(is){
-                cnt ++;
-            }
 			
 		}
+		sc1.close();
 		System.out.println(cnt);
 	}
 }

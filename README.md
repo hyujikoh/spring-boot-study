@@ -249,4 +249,12 @@
  </div>
 </details>
 
-<h1> 프로그램 실행도중 history 파일이 날라갔음
+<h1> 프로그램 실행도중 readme 파일이 날라가서 1/9~ 1/12일 기록이 없어졌습니다 조속히 복구 하겠습니다 .
+ 
+<details>
+
+<summary> 2022.1.13(Tru) </summary>
+<div markdown="1">
+ 
+ </div>
+</details>

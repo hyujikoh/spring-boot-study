@@ -37,5 +37,6 @@ public class spring_boot {
         h = sc.nextInt();
         Solution s = new Solution();
         s.solution(w,h);
+        System.out.println("천재 양천채의 천재적인 역사 시작");
     }
 }

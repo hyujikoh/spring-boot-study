@@ -31,12 +31,11 @@ public class spring_boot {
 	// write your code here
         int w,h;
         Scanner sc = new Scanner(System.in);
-        System.out.println("width ±æÀÌ ÀÔ·Â");
+        System.out.println("width ê¸¸ì´ ì…ë ¥");
         w = sc.nextInt();
-        System.out.println("height ±æÀÌ ÀÔ·Â");
+        System.out.println("height ê¸¸ì´ ì…ë ¥");
         h = sc.nextInt();
         Solution s = new Solution();
         s.solution(w,h);
-        System.out.println("ÃµÀç ¾çÃµÃ¤ÀÇ ÃµÀçÀûÀÎ ¿ª»ç ½ÃÀÛ");
     }
 }

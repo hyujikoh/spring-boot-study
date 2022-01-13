@@ -249,12 +249,27 @@
  </div>
 </details>
 
-<h1> 프로그램 실행도중 readme 파일이 날라가서 1/9~ 1/12일 기록이 없어졌습니다 조속히 복구 하겠습니다 .
+<h1> 프로그램 실행도중 readme 파일이 날라가서 1/9~ 1/12일 기록이 없어졌습니다 조속히 복구 하겠습니다 .</h1>
  
 <details>
 
 <summary> 2022.1.13(Tru) </summary>
 <div markdown="1">
+
+## 📝자바 프로그래밍 실습
+
+### 1. 프로그램 소개
+
+- 프로그래머스 문제 [멀쩡한 삼각형](https://programmers.co.kr/learn/courses/30/lessons/62048?language=java) 풀이
+
+- [소스코드](https://github.com/hyujikoh/spring-boot-study/blob/main/spring-boot/src/spring_boot.java)
+
+- 결과 </br>
+ ![image](https://user-images.githubusercontent.com/42793489/149349512-1ac7adae-95bc-4fde-a83a-4bebc23f27fd.png)
+
+- 아쉬운점 </br>
+해당 문제를 gui로 구현을 하면 좀더 한눈에 알아보기 쉬운 프로그램라는걸 알게되었지만 구현하지 못한것이 아쉬움이 남았습니다.</br>
+
  
  </div>
 </details>

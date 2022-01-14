@@ -1,4 +1,4 @@
-# 📌Spring-boot-study-challenge
+# 📌[Spring-boot-study-challenge](https://softsquared.notion.site/Spring-Boot-2c133315be4e4e78a5bdf8514cb28bcd)
 
 <details>
 
@@ -20,7 +20,6 @@
 - 프로그램 실행시 모든 객체 생성하지 않고, 객체가 필요한 시점에 동적로딩해서 객체 생성한다.
 유지보수 할 시 해당 클래스만 수정하면 되므로 유지보수에 용이하다.
 
-### 6. https://softsquared.notion.site/Spring-Boot-2c133315be4e4e78a5bdf8514cb28bcd
 </div>
 </details>
 
@@ -272,4 +271,36 @@
 
  
  </div>
+</details>
+
+ 
+<details>
+
+<summary> 2022.1.14(Fri) </summary>
+<div markdown="1">
+
+## 📝 스프링부트 개념 찾아보고 정리하기
+
+
+### 스프링 부터
+- 스프링 : 자바 기반의 웹 어플리케이션 프레임워크 
+
+
+개념, 장점, 기능
+- 내장된 서버 제공해서 독집 실행이 가능한 어플 개발할수있게한다 
+ 다양한 starter  제공하어 빌드 도구 구성에 대해서 간소화 가능
+ actuator  어플에 대한 모니터링과 관리를 보다 쉽게 할 수 있다. 
+ 스프링 부트 적용 유무에 대해 차이는
+ 없는 경우 스프링 web , mvc, json같이 라이브러리 의존성 같은 
+ 있는 경우 일반 자 어플 형대로 빌드 배포가 가능한 형태로 스프링 부트 프로젝트를 만들수있다.
+ 그리고 아파치 와 같은 서버 가 스프링 부트에 기본적으로 내장 되어있다
+ 따라서 별도의 톰캣 설정을 web.xml이나 서버 설정에서 하지 않는다.
+ 스프링 부트는 스타터를 제공하기 때문에 웹어플에 필요한 기본 라이브러리를 포함하기 때문에 의존성과 같은 별도의 설정을 할 필요가 없다
+ 
+ 기능 : starter , auto configuration, actuator
+ starter : 스프링에서 사용되는 라이브러리들의 의존 관계를 보다 간편하게 설정 할 수 있다.
+ auto configuration : 어플 기능에 대한 자동 설정을 제공함
+ actuator : 스프링 어플을 모니터릉 하기 위한 상태 제공
+ 
+</div>
 </details>

@@ -303,3 +303,18 @@
  
 </div>
 </details>
+
+ 
+ 
+<details>
+<summary> 2022.1.15(Sat) </summary>
+<div markdown="1">
+ 
+### IntelliJ 설치 및 실행
+
+- 설치 및 결과
+
+![image](https://user-images.githubusercontent.com/42793489/149618042-1b2cc886-00b6-4bd6-a9ad-0bd46734ed2b.png)
+
+</div>
+</details>

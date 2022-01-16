@@ -385,7 +385,7 @@
    > main
      > java
        > io.namosori.hello
-          | application.java // 서버 run 
+          | application.java // 서버 run, 스프링부트의 
           > controller
              | Hellocontroller.java // localhost 서버 연결시 상호작용
  ```
@@ -430,6 +430,13 @@ public class Hellocontroller {
  
 ![image](https://user-images.githubusercontent.com/42793489/149650412-89c21a1e-66f0-4ed2-bb28-b87df2e4f291.png)
 
+### 2. 공부한 내용
+ #### Annotation
+ 스프링 부트는 어노테이션을 다양하게 아는 것이 중요하다. SpringBoot의 시작점을 알리는 @SpringBootApplication 어노테이션 뿐만 아니라, 스프링 부트 어노테이션 등의 키워드로 구글링 해서 스프링부트에서 자주 사용되는 다양한 어노테이션을 이해하고 외워두자. 
  
+ #### 상속    
+ 
+ pom.xml 파일 안에 artifactId = spring-boot-starter-parent 를 상속 받으므로서  캐릭터 인코딩에 대한 utf-8 에 대한 버전 그리고 자바에 대한 버전과 관련된 properies 설정을 하지 않아도 되고, 
+ 상속 받은 spring-boot-starter-parent의 부모 spring-boot-dependencies 안에 관련 버전 설정 내용 이 들어가 있기 때문에 따로 설정을 안해도 된디. 
 </div>
 </details>

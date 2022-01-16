@@ -318,3 +318,118 @@
 
 </div>
 </details>
+ 
+ 
+<details>
+<summary> 2022.1.16(Sun) </summary>
+<div markdown="1">
+
+## 📝스프링부트 프로젝트 구조 살펴보기 / 의존성 / 내장 웹서버 / JAR / Application.properties 1 
+
+### 1. 📌Today's study    
+ 
+1-1. pom.xml 작성
+
+ ```XML
+ <?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>org.example</groupId>
+    <artifactId>hello-boot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>
+ ```
+ 
+1-2. Structure
+ - JAVA 폴더에 io.namusori.hello package 생성후, application 클래스 생성
+ 
+```
+ hello-boot
+ > src
+   > main
+     > java
+       > io.namosori.hello
+          | application.java // 서버 run 
+          > controller
+             | Hellocontroller.java // localhost 서버 연결시 상호작용
+ ```
+ 
+ 1-3. application.java
+ 
+ ```JAVA
+ package io.namosori.hello;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class application {
+    public static void main(String[] args) {
+        SpringApplication.run(application.class, args);
+    }
+}
+ ```
+ 
+ 
+ 1-4. Hellocontroller.java
+ 
+ ```JAVA
+ package io.namosori.hello.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Hellocontroller {
+
+    @GetMapping("/spring")
+    public String hello(){
+        return "2022-01-16-오현직 테스트 완료";
+    }
+}
+
+```
+
+1-5 실행결과
+ 
+![image](https://user-images.githubusercontent.com/42793489/149650412-89c21a1e-66f0-4ed2-bb28-b87df2e4f291.png)
+
+ 
+</div>
+</details>

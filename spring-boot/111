@@ -1,0 +1,48 @@
+auto conf 설정이 어떻게 되어가는지
+
+spring mvc 기반 웹 어플리케이션
+
+만야 ㄱ스프링 부트를 사용하지 않았다면... 
+
+기본적으로 해야하는 설정 
+1. 톰켓 설정, 서블릿 매핑 web.xml, bean 설정 등 기본전인 설정을 해야한다. 
+
+스프링 부트가 기본적인 설정을 하였다는 소리다. 
+
+설정 구성한다면 
+1. xml 파일을 통한 설정
+2. 클래스 기반 , 거기에다ㅣ가 어노테이션을 준다 // @configuration 어노테이션을 주고 특정 bean 등록하면 해당 bean 은 설정을 위해 사용되는 클래스다 라고  그래서 해당 클래스를 등록하고 @configuration 정의 되는 그 기능들을 통해 움직이는 
+그 클래스를 통해 필요한 기본 설정을 다해주고 있다. 
+
+@SpringBootApplication : 3가지의 어노테이션을 포함하는 어노테이션이다 .
+
+@SpringBootConfiguration : 그냥 @configuration이라고 이해해야한다. // 그러니까 설정파일을 위해 사용되는 클래스이다.
+@EnableAutoConfiguration
+@ComponentScan( : 특정 패키지 부터 어노테이션이 붙은 클래스들을 (ex. @service 등등) 찾아서 bean 을 등록해주세요 라는것이 이거다 .... spring bean 객체들을 찾기 위해서 사용하는 어노테이션이다 
+ComponentScan 을 통해서 내가 지정한 클래스들의 bean 등록이 된다 
+내가 임의적으로 만든 bean 객체라면 , 가령 Hellocontroller에서 @RestController라는 어노테이션을 갖고 있고, 
+@RestController라는 어노테이션은 controller라는 bean 등록 controller 클래스에 bean이 등록되는 어노테이션이다 . 
+
+내가 만든 application  클래스에 @SpringBootApplication 어노테이션은 기본적은 3개의 어노테이션을 합쳐놓은 것이다.
+따라서 @SpringBootApplication 어노테이션을 담은 클래스는 루트 폴더 안에 넣어 놓은게 좋다 . 하위 클래스에 넣어놓으면 오류가 발생할수 있다.
+
+@SpringBootApplication의  @EnableAutoConfiguration은 어떤식으로 자동설정이 진행이 되냐면, 먼저 componentScan 우리가 등록하고자 하는 bean 들이 쭉 등록이 될거다. 그리고 이후 @EnableAutoConfiguration 이 기능을 통해서 한번더 컴포넌트들을 스캔하면서 bean 등록이 되게 되는데 , 그때 등록된 빈 들은 설정을 위해 사용되는 다양한 빈들이 등록이 된다.  또 자동설정들이 
+지정 된다. 
+
+라이브러리의 spring -boot- auroconfigure 버전은 2.6.2 jar 파일이다. META -INF 파일 존재 
+그 안에 spring.factoires 파일 존재, 열어보면 다양한 클래스들에 자동설정으로 등록되어진다. 그래서 @EnableAutoConfiguration 기능을 통해 spring -boot- auroconfigure -> spring.factoires 내에 클래스 들이 조건에 따라 설정이 실행된다. 
+
+
+
+
+스프링 웹 어플이기때문에 dispatcher servlet 서블렛 설정이 어떻게 되어 있는지를 
+
+만약 자동설정으로 진행되길 원한다면  autoconfigure//// resource 안에 META-INF 폴더 만들어서 spring.factoires 만들어서 사용한다.. 
+
+
+스프링 부트 기반으로 REST 아키텍쳐를 갖는 웹 어플리케이션 설명
+
+
+웹 서비스란 , 네트워크로 연결된 컴퓨터들 간에 상호 작용 하기위한 소프트웨어 시스템이다. 
+
+웹서비스 구현 2가지, 웹 서비스, RESTFUL 서비스 

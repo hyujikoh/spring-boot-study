@@ -440,3 +440,37 @@ public class Hellocontroller {
  상속 받은 spring-boot-starter-parent의 부모 spring-boot-dependencies 안에 관련 버전 설정 내용 이 들어가 있기 때문에 따로 설정을 안해도 된디. 
 </div>
 </details>
+ 
+<details>
+<summary> 2022.1.17(Sun) </summary>
+<div markdown="1">
+ 
+## 📝 스프링부트 프로젝트 구조 살펴보기 / 의존성 / 내장 웹서버 / JAR / Application.properties 1 
+
+### 1. Today's Study
+
+ - <h3> Spring Boot 설정</h3> 
+ 
+   - Spring boot 사용하지 않는다면, 기본적으로 웹서버(Tomcat, jetty등), Servlet 설정, web.xml, bean 설정 등 전반적인 configuration을 해야하지만, Spring Boot 에서 기본적인 설정이 되어있기 때문에 따로 설정할 필요가 없다.    
+ 
+   - 설정 구성 할 경우   
+ 
+   1. XML 파일을 통한 설정
+   2. Class 기반으로 하여 Annotation을 준다. @configuration Annotation을 주고 특정 bean 등록하면 해당 bean 은 설정을 위해 사용되는 클래스다. 그래서 해당 클래스를 등록하고 @configuration 에 정의 되는 그 기능들을 통해 움직이는 필요한 기본 설정을 지원한다.    
+ 
+ - <h3> Annotation </h3>    
+ 
+   1. 전날 공부한 application.java 파일안에 추가한 @SpringBootApplication 문장은 3가지 Annotation을 포함한다.
+   2. @SpringBootConfiguration : @configuration이라고 이해해야한다. 
+   3. @ComponentScan : 특정 패키지 부터 Annotation이 붙은 클래스들을 (ex. @service 등등) 찾아서 bean 을 등록하는것 즉, Spring bean 객체들을 찾기 위해서 사용하는 Annotation이다. 만약 내가 임의로 생성한 bean 객체라면, 예를들어 어제 공부위해 추가한 Hellocontroller 클래스 파일에서 @RestController라는 Annotation을 갖고 있고, @RestController라는 Annotation은 controller라는 bean 등록 controller 클래스에 bean이 등록되는 Annotation이다 . 
+   4. @EnableAutoConfiguration : 자동설정 진행 Annotation, 먼저 componentScan 우리가 등록하고자 하는 bean 들이 쭉 등록이 될거다. 그리고 이후 @EnableAutoConfiguration 이 기능을 통해서 한번더 컴포넌트들을 스캔하면서 bean 등록이 되게 되는데 , 그때 등록된 빈 들은 설정을 위해 사용되는 다양한 빈들이 등록이 된다. 
+
+ - <h3> 내장 웹서버 </h3>
+ 
+   - spring-boot-starter-web 에 기본 내장웹서버가 설정되어있고, 해당 파일을 통해 내장 웹서버를 따로 구축 안해도 되고, 간단하게 다른 웹서버로 변경이 가능하다. 
+ 
+ - <h3> JAR 파일 </h3>
+  
+   - 여러개의 JAVA Class 파일과, 관련 리소스 및 메타데이터를 하나의 파일로 모아소 플랫폼에 SW배포와 Libary를 배포하기 위한 파일 포맷
+</div>
+</details>

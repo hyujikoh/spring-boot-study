@@ -503,7 +503,7 @@ public class Hellocontroller {
  
 ### 3. MYSQL 설치 및 실행 결과
  
- - 화면 캡처 본
+ - 화면 캡처
 ![image](https://user-images.githubusercontent.com/42793489/149841846-071eccf6-dabc-4091-a11c-176b335e03c3.png) 
 
 </div>

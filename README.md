@@ -508,3 +508,35 @@ public class Hellocontroller {
 
 </div>
 </details>
+
+ 
+ 
+<details>
+<summary> 2022.1.19(Wen) </summary>
+<div markdown="1">
+ 
+
+## 📝 Mysql 구조 및 서버 접속하기
+
+### 1. 데이터베이스 구조
+ 
+ - TABLE : 관계형 데이터베이스의 기본 단위, 어느 특정한 주제와 목적으로 만들어지는 일종의 집합
+ - SCHEMA : 각각의 테이블을 연관유무에 따라 그룹핑 하고, 아닌 경우 테이블을 분리하여 표현하는 구조
+  - 내부 SCHEMA : 데이터베이스가 물리적으로 저장된 형식. 물리적 장치에서 데이터가 실제적으로 저장되는 방법을 표현하는 스키마
+  - 개념 SCHEMA : 모든 사용자 관점 통합한 전체 DB 기술한 것 , DB 에 저장되는 데이터와 사용자들간의 관계를 표현 하는 스키마
+  - 외부 SCHEMA : 데이터베이스의 개개 사용자나 응용프로그래머가 접근하는 DB 정의하는 스키마
+ - DB : 여러 스키마를 그룹화 한 것이 DB
+
+ ### 2. Mysql 서버 접속하기
+ 
+ - bitnami WAMP 설치후 Mysql 동작 하는지 확인
+ ![image](https://user-images.githubusercontent.com/42793489/150064279-8347f2ca-13a0-4290-93a5-f21e5ed8a145.png)
+ 
+ - bitnami 가 설치된 경로중 C:\Bitnami\wampstack-8.0.1-0\mysql\bin 폴더안에 mysql 파일 cmd 에서 실행(계정은 root)하여 mysql 서버 접속
+![image](https://user-images.githubusercontent.com/42793489/150049511-db0e777d-3c01-4b14-b7aa-c0a2be0372ae.png)
+ 
+
+ 
+</div>
+</details>
+ 

@@ -540,3 +540,26 @@ public class Hellocontroller {
 </div>
 </details>
  
+ 
+<details>
+<summary> 2022.1.20(Thu) </summary>
+<div markdown="1">
+
+## 📝 SQL, 테이블 개념 알아보기
+ 
+### 1. SQL 
+
+- 개념 : 관계형 DB 에서 데이터 정의, 데이터 정의, 데이터 제어 위해 사용되는 언어이다.
+
+- SQL 문장들의 종류
+
+| 명령어 종류 | 명령어 | 설명 |
+| :---: | :----: | :---- |
+| 데이터 조작어(DML) | SELECT</br>INSERT</br>UPDATE</br>DELETE | 데이터 조회 검색 위한 SELECT와 데이터를 새로운 행에 집어넣는 INSERT, 데이터 삭제와 수정하는 UPDATE 와 DELETE 같이 데이터 조회와 변형을 가하는 명형어를 DML이라 말한다  |
+| 데이터 정의어(DDL) | CREATE</br>ALTER</br>DROP</br>RENAME| 테이블과 같은 데이터 구저 정의하는데 사용되는 명령어. 구조를 생성하거나 변경, 삭제, 이름 바꾸는 데이터 구조와 관련된 명령어들을 DDL|
+| 데이터 제어어(DCL) | GRANT</br>REVOKE | 데이터베이스에 접근하고 객체 ㅏ용하도록 권한을 주고 회수하는 명령어를 DCL |
+| 트랜잭션 제어어(TCL) | COMMIT</br>ROLLBACK | 논리적인 작업의 단위를 묶어서 DML에 의해 조작된 결과를 작업단위(트랜잭션) 별로 제어하는 명령어를 TCL |
+ 
+
+</div>
+</details>

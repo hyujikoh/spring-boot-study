@@ -571,6 +571,38 @@ public class Hellocontroller {
 | 행 | 2차원 구조를 가진 테이블에서 가로 방향으로 이루어진 연결된 데이터 |
 
 
+</div>
+</details>
+
+<details>
+<summary> 2022.1.21(Fri) </summary>
+<div markdown="1">
+ 
+## 📝 Mysql INSERT, SELECT, UPDATE, DELETE 실습하기
+
+### 테이블 구축
+
+- springboot 데이터베이스에 pet 테이블 구축
+ 
+  - springboot 데이터베이스 구축
+
+![image](https://user-images.githubusercontent.com/42793489/150477538-e81b555b-90e2-47e8-adfb-a126ee40c357.png)
+
+  - pet 테이블 구축
+ 
+![image](https://user-images.githubusercontent.com/42793489/150477859-32e9b657-f81e-4f87-b112-3cfa7dbdbf35.png)
+ 
+- pet 테이블 INSERT 명령어로 데이터 추가, SELECT 명령어로 데이터 조회
+ 
+![image](https://user-images.githubusercontent.com/42793489/150478081-af2f0b03-6817-4cdf-88f1-b90c36ae5373.png)
+
+- UPDATE 명령어로 데이터 수정 ( NAME = NACHO 라는 데이터의 DEATH 속성 데이터 추가 )
+
+![image](https://user-images.githubusercontent.com/42793489/150478633-02de25e2-9396-42e4-81ef-992538856b17.png)
+
+ - DELETE 명령어로 pet 테이블에 데이터 삭제( sex = m 인 데이터 삭제)
+
+ ![image](https://user-images.githubusercontent.com/42793489/150478846-0e7498d3-1828-44f2-8172-af0c734867d0.png)
 
 </div>
 </details>

@@ -584,13 +584,13 @@ public class Hellocontroller {
 
 - springboot 데이터베이스에 pet 테이블 구축
  
-  - springboot 데이터베이스 구축
+- springboot 데이터베이스 구축 및 pet 테이블 구축
 
 ![image](https://user-images.githubusercontent.com/42793489/150477538-e81b555b-90e2-47e8-adfb-a126ee40c357.png)
-
-  - pet 테이블 구축
  
 ![image](https://user-images.githubusercontent.com/42793489/150477859-32e9b657-f81e-4f87-b112-3cfa7dbdbf35.png)
+
+### INSERT, SELECT, UPDATE, DELETE 실습
  
 - pet 테이블 INSERT 명령어로 데이터 추가, SELECT 명령어로 데이터 조회
  

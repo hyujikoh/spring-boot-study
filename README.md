@@ -606,3 +606,35 @@ public class Hellocontroller {
 
 </div>
 </details>
+
+<details>
+<summary> 2022.1.22(Sat) </summary>
+<div markdown="1">
+
+## 📝 Mysql JOIN 개념 알아보고 실습하기
+
+ 
+### 사전 구축
+- 테이블 pet 과 테이블 shop 두개의 테이블을 통해 동일한 속성 pet name 을 통해 join 이용 
+ > ### pet 테이블 
+![image](https://user-images.githubusercontent.com/42793489/150632737-d4091f24-2d8b-4ea7-8f32-4dbce8f27c5e.png)
+ 
+ > ### shop 테이블 
+![image](https://user-images.githubusercontent.com/42793489/150632773-67c7855e-8713-4b21-9f58-198bfe4e8b10.png)
+
+ ### 📌 실습
+ #### (pet.*,shop.shopName,shop.number 으로 출력)
+ 
+ </br>
+ 
+ > ### inner join result
+![image](https://user-images.githubusercontent.com/42793489/150632857-4c0eb56d-19aa-4a16-8ecf-69c1194d2188.png)
+
+ > ### left outer join result
+![image](https://user-images.githubusercontent.com/42793489/150632989-4d7fef0b-5365-4f29-a903-69203721c703.png)
+
+ > ### right outer join result
+![image](https://user-images.githubusercontent.com/42793489/150633015-4ff2253d-a2a9-4131-8ac3-18933c58775f.png)
+
+</div>
+</details>

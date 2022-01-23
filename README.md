@@ -644,8 +644,153 @@ public class Hellocontroller {
 <summary> 2022.1.23(SUN) </summary>
 <div markdown="1">
 
- ## 📝 앞서 진행했던 Spring Boot 복습해보기
+## 📝 앞서 진행했던 Spring Boot 복습해보기
  
+### user-rest java 파일 생성하여 이름, email, 난수화된 id를 json 형태로 출력
 
+```
+ user-rest
+ > src
+   > main
+     > java
+       > io.namoosori.rest
+          | UserRestApp // 서버 run, 스프링부트의 
+          > entity
+             | user.java // user의 난수화된 id, 입력화된 이름, email 을 출력하는 테스트 java 파일
+ ```
+ 
+1. pom.xml
+``` JAVA
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+ 
+    <parent> // spring-boot-starter-parent 상속을 받음 
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>io.namoosori</groupId>
+    <artifactId>user-rest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <dependencies> // 초기 설정 위한 spring-boot-starter-web과 user api 구축위한 lombok 의존성주입
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency> //json 타입 데이터 사용 위한 gson 의존성 주입 
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+</project>
+```
+ 
+ 
+2. UserRestApp.class 
+```JAVA
+ 
+// 초기 실행 위한 java 파일
+package io.namoosori.rest;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class UserRestApp {
+   public UserRestApp() {
+   }
+
+   public static void main(String[] args) {
+       SpringApplication.run(UserRestApp.class, args);
+   }
+}
+```
+ 
+3. User.java
+``` JAVA
+package io.namoosori.rest.entity;
+
+import com.google.gson.Gson;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+import java.util.UUID;
+
+@Getter
+@Setter
+@ToString
+public class User {
+    private String id;
+    private String name;
+    private String email;
+    public User(){
+        this.id = UUID.randomUUID().toString();/** 유저객체가 생성될때마다 랜덤할 아이디를 부여한다**/
+    }
+    public User(String name, String email){
+        /** id 는 랜덤으로 만들어주기 때문에 this ();으로 호출하여 아이디를 생성하고 매개변수로 초기화 **/
+        this();
+        this.name = name;
+        this.email = email;
+    }
+
+    /**유저에 데이터를 여러가지 형태로 사용한다 . 우리는 insomnia 라는 restclient라는 클라이언트로 데이터를 주고받을것이다 그 테스트를 위해서 필요한 데이터들이 있다. 샘플데이터를 위해서 entity 에다 static 데이터를 만든다**/
+    public static User smaple(){
+        return new User("Thomas","dvum0045@gmail.com");
+    }
+    public static void main(String[] args) {
+        User user = new User("kim","kim@gmali.com"); // 객체생성
+        /**만약 getsetter 가 나온다면 만약 lombok 을 처음 사용한다면 플러그인을 설치해야한다**/
+        /**json 형태로 출력 // **/
+        System.out.println(new Gson().toJson(user));
+    }
+}
+
+```
 </div>
 </details>

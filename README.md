@@ -792,5 +792,9 @@ public class User {
 }
 
 ```
+ 
+> ### 해당 프로그램 실행결과
+![image](https://user-images.githubusercontent.com/42793489/150667499-20e05e9a-61b5-4790-96e1-245c36863b9b.png)
+
 </div>
 </details>

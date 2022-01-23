@@ -641,7 +641,7 @@ public class Hellocontroller {
 
 
 <details>
-<summary> 2022.1.23(SUN) </summary>
+<summary> 2022.1.23(Sun) </summary>
 <div markdown="1">
 
 ## 📝 앞서 진행했던 Spring Boot 복습해보기

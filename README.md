@@ -798,3 +798,77 @@ public class User {
 
 </div>
 </details>
+
+<details>
+<summary> 2022.1.23(Mon) </summary>
+<div markdown="1">
+
+## 📝 앞서 진행했던 java 기본 문법과 SQL문 복습하기 
+ 
+ 
+### 1. JAVA 기본 문법 복습
+
+> [코딩테스트 연습(전화번호 목록)](https://programmers.co.kr/learn/courses/30/lessons/42577)
+``` JAVA
+// hashmap 을 통해 문제 풀이
+import java.util.HashMap;
+import java.util.Map;
+class Solution {
+    //해시 맵 선언 , 키값은 문자형 value 는 정수형 을 갖는 해시 구조 생성
+    public boolean solution(String[] phone_book) {
+        Map<String,Integer> map = new HashMap<>();
+
+        //2. HashMap 에 phone_book의 전화번호를 넣는다.
+        for(int i=0;i<phone_book.length;i++){
+            map.put(phone_book[i],i);
+        }
+        //모든 전화번호의 substring이 hashmap이 존재하는지 확인
+        for(int i=0;i<phone_book.length;i++){
+            for (int j=0;j<phone_book[i].length();j++){
+                //각 phone_book[i]의 substring 을 추출하여 그것이 hash 값에 존재하는지 여부 판단 
+                if(map.containsKey(phone_book[i].substring(0,j))){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+}
+```
+``` JAVA
+// for 문과 startwith 으로 문제 풀이
+import java.util.Arrays;
+
+class Solution {
+    public boolean solution(String[] phone_book) {
+        // phoneBook 정렬 
+        Arrays.sort(phone_book);
+        //for 문 사용 하여 앞번호가 뒷번호 접두어 인지 확인
+        
+        for (int i = 0; i < phone_book.length - 1; i++){
+          if (phone_book[i + 1].startsWith(phone_book[i])) 
+              return false;  
+        } 
+
+       
+        return true;
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/42793489/150726544-5b3a7957-29e5-4616-81c7-eafe173ff31f.png)
+
+### 2. SQL 문 
+> [코딩테스트 연습(중복 제거하기)](https://programmers.co.kr/learn/courses/30/lessons/59408)
+``` MYSQL
+select count(distinct NAME) as count  from ANIMAL_INS;
+```
+![image](https://user-images.githubusercontent.com/42793489/150711416-aad191d9-b3f6-4033-8731-daff8723fcf8.png)
+
+ 
+ > [코딩테스트 연습(NULL 처리하기)](https://programmers.co.kr/learn/courses/30/lessons/59410)
+``` MYSQL
+SELECT ANIMAL_TYPE, IFNULL(NAME,"No name") as NAME,SEX_UPON_INTAKE from ANIMAL_INS;
+```
+![image](https://user-images.githubusercontent.com/42793489/150717055-8138c239-c101-4313-9ed5-92b568cf0ec4.png)
+</div>
+</details>

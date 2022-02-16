@@ -872,3 +872,31 @@ SELECT ANIMAL_TYPE, IFNULL(NAME,"No name") as NAME,SEX_UPON_INTAKE from ANIMAL_I
 ![image](https://user-images.githubusercontent.com/42793489/150717055-8138c239-c101-4313-9ed5-92b568cf0ec4.png)
 </div>
 </details>
+
+ 
+ 
+ <details>
+<summary> 2022.2.16(Wen) </summary>
+<div markdown="1">
+ 
+ 앞써 설치한 nginx 웹서버만으로는 동적인 페이지 구현이 어렵습니다. 여기서 동적인 페이지라 함은 접속할때마다 변하는 페이지를 의미합니다. 그래서 로그인과 게시글 등록이란 것 할 수 있지요. 로그인이나 게시글 등록을 할때마다 페이지가 변하는... 그런 페이지가 바로 동적인 페이지입니다. 어째거나 웹서버의 역할은 정적인 html 웹문서 파일을 웹브라우저에 전송해주는 역활만 하거든요.
+
+
+
+로그인과 게시글 등록을 하기위해서는 동적인 페이지 구현이 필요합니다. 또 동적인 페이지를 구현하기위해서는 웹서버 이외의 외부 프로그램에서 처리하는 방법을 사용합니다. 웹서버에서 요청을 받아 그 요청을 외부 프로그램에 넘겨주면, 외부 프로그램은 프로그램 파일을 읽어 html로 반환하는 단계를 거치게 됩니다. 이것을 CGI 라고 합니다. 우리가 설치해볼 php-fpm도 CGI에 해당됩니다.
+
+
+
+php 프로그램, php 언어는 아는데.. php-fpm는 뭔가요? PHP FastCGI Process Manager의 약자입니다. FastCGI는 위에서 말한 CGI보다좀더 빠른 버전이라고 할 수 있습니다. CGI는 요청할때마다 새로운 프로세스 생성하여 구동하게 되는 데.. 이렇게 되면 부하가 심할뿐만 느려지게 되어있습니다. 하지만 FastCGI은 요청할때마다 새로운 프로세스 생성하는 것이 아니라 이미 생성한 프로세스를 재활용하는 방법을 사용합니다. 때문에 처리가 빠르다는 장점이 있습니다.
+
+
+
+apache의 경우에는 apache용 php 모듈이 있어서 자체적으로 처리하게 되어있습니다. 하지만 nginx에는 그런 모듈따윈 없습니다. 때문에 php-fpm를 따로 설치해서 nginx와 연동시켜야 합니다.
+
+
+ 
+ phhmyadmin phpmyadmin이란?
+mysql을 GUI로 관리할 수 있는 무료 소프트웨어 도구이다.
+ 웹기반으로 mysql을 제어할 수 있는 mysql-client
+ </div>
+</details>
